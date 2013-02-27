@@ -44,6 +44,7 @@
 		0047DC5D16D92371003DA2A8 /* gtest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = gtest.framework; path = "../../../../../Library/Developer/Xcode/DerivedData/gtest-cdomnaoieemlxketmlgsofqouxil/Build/Products/Debug/gtest.framework"; sourceTree = "<group>"; };
 		0047DC6316D923F2003DA2A8 /* libstdc++.6.0.9.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libstdc++.6.0.9.dylib"; path = "usr/lib/libstdc++.6.0.9.dylib"; sourceTree = SDKROOT; };
 		0047DC6C16D966D7003DA2A8 /* IteratorsEqual_Test.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = IteratorsEqual_Test.cpp; sourceTree = "<group>"; };
+		005B470E16DB181E0008721C /* IteratorAlgorithms.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IteratorAlgorithms.h; sourceTree = "<group>"; };
 		00656A2F16D47846007F2085 /* gtest_main.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = gtest_main.cpp; sourceTree = "<group>"; };
 		00CAC75116B76A9A00150A9C /* 8-2-iterators-impl */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "8-2-iterators-impl"; sourceTree = BUILT_PRODUCTS_DIR; };
 		00CAC75516B76A9A00150A9C /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
@@ -98,6 +99,7 @@
 			children = (
 				00CAC75516B76A9A00150A9C /* main.cpp */,
 				00CAC75716B76A9A00150A9C /* __2_iterators_impl.1 */,
+				005B470E16DB181E0008721C /* IteratorAlgorithms.h */,
 			);
 			path = "8-2-iterators-impl";
 			sourceTree = "<group>";
@@ -286,14 +288,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				FRAMEWORK_SEARCH_PATHS = "/Users/rholmes/Library/Developer/Xcode/DerivedData/gtest-cdomnaoieemlxketmlgsofqouxil/Build/Products/Debug";
-				HEADER_SEARCH_PATHS = "/Users/rholmes/code/src/googletest-read-only/include";
-				LIBRARY_SEARCH_PATHS = (
-					"$(inherited)",
-					"\"$(SRCROOT)/../../../../../Library/Developer/Xcode/DerivedData/gtest-cdomnaoieemlxketmlgsofqouxil/Build/Products/Debug\"",
+				HEADER_SEARCH_PATHS = (
+					"/Users/rholmes/code/src/googletest-read-only/include",
+					"../8-2-iterators-impl",
 				);
+				LIBRARY_SEARCH_PATHS = "\"$(SRCROOT)/../../../../../Library/Developer/Xcode/DerivedData/gtest-cdomnaoieemlxketmlgsofqouxil/Build/Products/Debug\"";
 				"LIBRARY_SEARCH_PATHS[arch=*]" = "$(inherited)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				"USER_HEADER_SEARCH_PATHS[arch=*]" = /Users/rholmes/code/xcode/gtest_framework/gtest.framework/Headers;
+				"USER_HEADER_SEARCH_PATHS[arch=*]" = "";
 			};
 			name = Debug;
 		};
@@ -301,13 +303,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				FRAMEWORK_SEARCH_PATHS = "/Users/rholmes/Library/Developer/Xcode/DerivedData/gtest-cdomnaoieemlxketmlgsofqouxil/Build/Products/Debug";
-				HEADER_SEARCH_PATHS = "/Users/rholmes/code/src/googletest-read-only/include";
-				LIBRARY_SEARCH_PATHS = (
-					"$(inherited)",
-					"\"$(SRCROOT)/../../../../../Library/Developer/Xcode/DerivedData/gtest-cdomnaoieemlxketmlgsofqouxil/Build/Products/Debug\"",
+				HEADER_SEARCH_PATHS = (
+					"/Users/rholmes/code/src/googletest-read-only/include",
+					"../8-2-iterators-impl",
 				);
+				LIBRARY_SEARCH_PATHS = "\"$(SRCROOT)/../../../../../Library/Developer/Xcode/DerivedData/gtest-cdomnaoieemlxketmlgsofqouxil/Build/Products/Debug\"";
+				"LIBRARY_SEARCH_PATHS[arch=*]" = "\"$(SRCROOT)/../../../../../Library/Developer/Xcode/DerivedData/gtest-cdomnaoieemlxketmlgsofqouxil/Build/Products/Debug\"";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				"USER_HEADER_SEARCH_PATHS[arch=*]" = /Users/rholmes/code/xcode/gtest_framework/gtest.framework/Headers;
+				"USER_HEADER_SEARCH_PATHS[arch=*]" = "";
 			};
 			name = Release;
 		};
