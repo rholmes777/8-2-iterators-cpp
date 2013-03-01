@@ -12,6 +12,8 @@
 		0047DC6D16D966D7003DA2A8 /* IteratorsEqual_Test.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0047DC6C16D966D7003DA2A8 /* IteratorsEqual_Test.cpp */; };
 		0047DC6E16D97B03003DA2A8 /* gtest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0047DC5D16D92371003DA2A8 /* gtest.framework */; };
 		00656A3116D47846007F2085 /* gtest_main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 00656A2F16D47846007F2085 /* gtest_main.cpp */; };
+		00B7724F16DF00DB00DCDE2A /* IteratorsFind_Test.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 00B7724E16DF00DB00DCDE2A /* IteratorsFind_Test.cpp */; };
+		00B7725C16DF081A00DCDE2A /* IteratorsCopy_Test.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 00B7725B16DF081A00DCDE2A /* IteratorsCopy_Test.cpp */; };
 		00CAC75616B76A9A00150A9C /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 00CAC75516B76A9A00150A9C /* main.cpp */; };
 		00CAC75816B76A9A00150A9C /* __2_iterators_impl.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = 00CAC75716B76A9A00150A9C /* __2_iterators_impl.1 */; };
 		00D5DD9516D317B700FC04C9 /* Unit_GTests.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = 00D5DD9416D317B700FC04C9 /* Unit_GTests.1 */; };
@@ -46,6 +48,8 @@
 		0047DC6C16D966D7003DA2A8 /* IteratorsEqual_Test.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = IteratorsEqual_Test.cpp; sourceTree = "<group>"; };
 		005B470E16DB181E0008721C /* IteratorAlgorithms.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IteratorAlgorithms.h; sourceTree = "<group>"; };
 		00656A2F16D47846007F2085 /* gtest_main.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = gtest_main.cpp; sourceTree = "<group>"; };
+		00B7724E16DF00DB00DCDE2A /* IteratorsFind_Test.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = IteratorsFind_Test.cpp; sourceTree = "<group>"; };
+		00B7725B16DF081A00DCDE2A /* IteratorsCopy_Test.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = IteratorsCopy_Test.cpp; sourceTree = "<group>"; };
 		00CAC75116B76A9A00150A9C /* 8-2-iterators-impl */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "8-2-iterators-impl"; sourceTree = BUILT_PRODUCTS_DIR; };
 		00CAC75516B76A9A00150A9C /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		00CAC75716B76A9A00150A9C /* __2_iterators_impl.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = __2_iterators_impl.1; sourceTree = "<group>"; };
@@ -108,6 +112,8 @@
 			isa = PBXGroup;
 			children = (
 				0047DC6C16D966D7003DA2A8 /* IteratorsEqual_Test.cpp */,
+				00B7724E16DF00DB00DCDE2A /* IteratorsFind_Test.cpp */,
+				00B7725B16DF081A00DCDE2A /* IteratorsCopy_Test.cpp */,
 				00D5DD9416D317B700FC04C9 /* Unit_GTests.1 */,
 				00656A2F16D47846007F2085 /* gtest_main.cpp */,
 			);
@@ -193,6 +199,8 @@
 			files = (
 				00656A3116D47846007F2085 /* gtest_main.cpp in Sources */,
 				0047DC6D16D966D7003DA2A8 /* IteratorsEqual_Test.cpp in Sources */,
+				00B7724F16DF00DB00DCDE2A /* IteratorsFind_Test.cpp in Sources */,
+				00B7725C16DF081A00DCDE2A /* IteratorsCopy_Test.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

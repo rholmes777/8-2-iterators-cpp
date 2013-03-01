@@ -19,9 +19,9 @@
 /////////////////////////////////////////////////////////////////////////////////////////////
 TEST(Equal, EmptyListsShouldBeEqual)
 {
-    std::vector<int> listA, listB;
+    std::vector<int> vectorA, vectorB;
     
-    EXPECT_TRUE(Namespace::equal(listA.begin(), listA.end(), listB.begin()));
+    EXPECT_TRUE(Namespace::equal(vectorA.begin(), vectorA.end(), vectorB.begin()));
 }
 
 TEST(Equal, ContainersWithSameSingleValueShouldBeEqual)

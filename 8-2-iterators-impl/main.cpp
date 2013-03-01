@@ -23,16 +23,11 @@
 
 
 #include <iostream>
-
-int dummy(void)
-{
-    return 2;
-}
+#include "IteratorAlgorithms.h"
 
 int main(int argc, const char * argv[])
 {
-
-    // insert code here...
+    // We could use our algorithms here, or just test in google test...
     std::cout << "Hello, World!\n";
     return 0;
 }

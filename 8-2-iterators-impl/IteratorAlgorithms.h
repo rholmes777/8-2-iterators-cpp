@@ -11,6 +11,9 @@
 
 namespace rah {
     
+    //////////////////////////
+    // Equal
+    //////////////////////////    
     template<class InputIterator_T1, class InputIterator_T2>
     bool equal(InputIterator_T1 begin1, InputIterator_T1 end1, InputIterator_T2 begin2)
     {
@@ -35,6 +38,37 @@ namespace rah {
         }
         return true;
     }
+    
+    //////////////////////////
+    // Find
+    //////////////////////////
+    template<class InputIterator_T1>
+    InputIterator_T1 find(InputIterator_T1 begin1, InputIterator_T1 end1, typename InputIterator_T1::value_type toFind)
+    {
+        while (begin1 != end1)
+        {
+            if (*begin1 == toFind)
+            {
+                return begin1;
+            }
+            begin1++;
+        }
+        return end1;
+    }
 
+    //////////////////////////
+    // Copy: Copies the elements in the range [first,last) into the range beginning at result.
+    //////////////////////////
+    template<class InputIterator_T, class OutputIterator_T>
+    OutputIterator_T copy(InputIterator_T first, InputIterator_T last, OutputIterator_T result)
+    {
+        while (first != last)
+        {
+            *result = *first;
+            result++;
+            first++;
+        }
+        return result;
+    }
 }
 #endif
