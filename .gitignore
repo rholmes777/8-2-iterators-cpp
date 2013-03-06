@@ -8,6 +8,9 @@
 *~.nib/
 build/*
 
+# Qt IDE user files
+*.user
+
 # xcworkspace is used for xcode's snapshot feature when converting to 
 # "modern" settings.
 *.xcodeproj/project.xcworkspace/
