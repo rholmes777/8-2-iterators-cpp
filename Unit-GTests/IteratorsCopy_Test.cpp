@@ -72,6 +72,7 @@ TEST(Copy, CopyMultipleElementsToBeginningOfContainer)
     std::vector<int>::iterator it = Namespace::copy(vecA.begin(), vecA.end(), vecB.begin());
     EXPECT_EQ(it, vecB.end());
     EXPECT_TRUE(std::equal(vecB.begin(), vecB.end(), std::vector<int>({1, 2, 3}).begin()));
+    EXPECT_EQ(vecB, std::vector<int>({1, 3, 3}));
 }
 
 
