@@ -12,8 +12,8 @@
 #include <vector>
 #include <list>
 
-//#define Namespace rah
-#define Namespace std
+#define Namespace rah
+//#define Namespace std
 
 // TODO iterator comparisons will crash with symbol not found when Google Test tries to print
 // the arguments to the failed expectation.  Fix this...

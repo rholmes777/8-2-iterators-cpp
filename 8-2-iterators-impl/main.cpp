@@ -23,12 +23,18 @@
 
 
 #include <iostream>
+#include <vector>
 #include "IteratorAlgorithms.h"
 
 int main(int argc, const char * argv[])
 {
     // We could use our algorithms here, or just test in google test...
-    std::cout << "Hello, World!\n";
+
+    // Try to print the vector out (NOTE: Doesn't work in g++ 4.7)
+    //std::vector<int> v({1, 2, 3});
+    //std::cout << "Print a vector using iostream: " << v << std::endl;
+    std::cout << "Print a vector using iostream: doesn't compile in g++ 4.7/Ubuntu" << std::endl;
+
     return 0;
 }
 

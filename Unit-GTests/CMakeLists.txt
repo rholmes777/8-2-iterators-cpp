@@ -4,6 +4,7 @@ add_executable(
   IteratorsEqual_Test.cpp
   IteratorsCopy_Test.cpp
   IteratorsFind_Test.cpp
+  IteratorsRemoveCopyIf_Test.cpp
 )
 target_link_libraries(IteratorsTest ${GTEST_LIBRARIES})
 
