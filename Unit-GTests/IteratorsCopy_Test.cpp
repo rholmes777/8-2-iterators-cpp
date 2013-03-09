@@ -26,7 +26,7 @@ TEST(Copy, CopyEmptyRangeDoesntChangeResult_1)
     
     std::vector<int>::iterator it = Namespace::copy(vecA.begin(), vecA.end(), vecB.begin());
 
-    EXPECT_EQ(it, vecB.begin());
+    EXPECT_EQ(vecB.begin(), it);
 }
 
 TEST(Copy, CopyEmptyRangeDoesntChangeResult_2)
@@ -36,8 +36,8 @@ TEST(Copy, CopyEmptyRangeDoesntChangeResult_2)
     
     std::vector<int>::iterator it = Namespace::copy(vecA.begin()+1, vecA.begin()+1, vecB.begin());
     
-    EXPECT_EQ(it, vecB.begin());
-    EXPECT_EQ(vecB, std::vector<int>({3}));
+    EXPECT_EQ(vecB.begin(), it);
+    EXPECT_EQ(std::vector<int>({3}), vecB);
 }
 
 TEST(Copy, CopyOneElementToEmptyContainer)
@@ -46,7 +46,7 @@ TEST(Copy, CopyOneElementToEmptyContainer)
     std::vector<int> vecB(1);
     
     std::vector<int>::iterator it = Namespace::copy(vecA.begin()+1, vecA.begin()+2, vecB.begin());
-    EXPECT_EQ(it, vecB.end());
+    EXPECT_EQ(vecB.end(), it);
     EXPECT_TRUE(std::equal(vecB.begin(), vecB.end(), std::vector<int>({2}).begin()));
 }
 
@@ -57,8 +57,8 @@ TEST(Copy, CopyMultipleElementsToEmptyContainer)
     std::vector<int> vecB(3);
     
     std::vector<int>::iterator it = Namespace::copy(vecA.begin(), vecA.end(), vecB.begin());
-    EXPECT_EQ(it, vecB.end());
-    
+    EXPECT_EQ(vecB.end(), it);
+
     std::vector<int> reference = {1, 2, 3};
     EXPECT_TRUE(std::equal(vecB.begin(), vecB.end(), reference.begin()));
 }
@@ -70,9 +70,9 @@ TEST(Copy, CopyMultipleElementsToBeginningOfContainer)
     vecB = {4, 5, 0};
     
     std::vector<int>::iterator it = Namespace::copy(vecA.begin(), vecA.end(), vecB.begin());
-    EXPECT_EQ(it, vecB.end());
+    EXPECT_EQ(vecB.end(), it);
     EXPECT_TRUE(std::equal(vecB.begin(), vecB.end(), std::vector<int>({1, 2, 3}).begin()));
-    EXPECT_EQ(vecB, std::vector<int>({1, 2, 3}));
+    EXPECT_EQ(std::vector<int>({1, 2, 3}), vecB);
 }
 
 

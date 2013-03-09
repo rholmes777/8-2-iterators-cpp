@@ -30,7 +30,7 @@ TEST(RemoveCopyIf, CopyAllIfPredFalse)
 
     auto iter = Namespace::remove_copy_if(sourceVec.begin(), sourceVec.end(), targetVec.begin(), falsePred);
 
-    EXPECT_EQ(iter, targetVec.begin()+5) << "Return value should point after the copied 5 items.";
+    EXPECT_EQ(targetVec.begin()+5, iter) << "Return value should point after the copied 5 items.";
     EXPECT_EQ(std::vector<int>({1, 2, 3, 4, 5}), targetVec);
 }
 
@@ -41,7 +41,7 @@ TEST(RemoveCopyIf, CopyNoneIfPredTrue)
 
     auto iter = Namespace::remove_copy_if(sourceVec.begin(), sourceVec.end(), targetVec.begin(), truePred);
 
-    EXPECT_EQ(iter, targetVec.begin()) << "Return value should point after the copied 5 items.";
+    EXPECT_EQ(targetVec.begin(), iter) << "Return value should point after the copied 5 items.";
     EXPECT_EQ(std::vector<int>({0, 0, 0, 0, 0}), targetVec);
 }
 
@@ -52,7 +52,7 @@ TEST(RemoveCopyIf, CopyOddNumbers)
 
     auto iter = Namespace::remove_copy_if(sourceVec.begin(), sourceVec.end(), targetVec.begin(), evenPred);
 
-    EXPECT_EQ(iter, targetVec.begin()+3) << "Return value should point after the copied 3 items.";
+    EXPECT_EQ(targetVec.begin()+3, iter) << "Return value should point after the copied 3 items.";
     EXPECT_EQ(std::vector<int>({1, 3, 5, 0, 0}), targetVec);
 }
 
@@ -63,7 +63,7 @@ TEST(RemoveCopyIf, CopyEvenNumbers)
 
     auto iter = Namespace::remove_copy_if(sourceVec.begin(), sourceVec.end(), targetVec.begin(), oddPred);
 
-    EXPECT_EQ(iter, targetVec.begin()+2) << "Return value should point after the copied 2 items.";
+    EXPECT_EQ(targetVec.begin()+2, iter) << "Return value should point after the copied 2 items.";
     EXPECT_EQ(std::vector<int>({2, 4, 0, 0, 0}), targetVec);
 }
 
