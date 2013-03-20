@@ -163,7 +163,7 @@
 		00CAC74816B76A9A00150A9C /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0450;
+				LastUpgradeCheck = 0460;
 				ORGANIZATIONNAME = "Richard Holmes";
 			};
 			buildConfigurationList = 00CAC74B16B76A9A00150A9C /* Build configuration list for PBXProject "8-2-iterators-impl" */;
@@ -234,7 +234,7 @@
 				"LIBRARY_SEARCH_PATHS[arch=*]" = "";
 				MACOSX_DEPLOYMENT_TARGET = 10.7;
 				ONLY_ACTIVE_ARCH = YES;
-				SDKROOT = macosx10.7;
+				SDKROOT = macosx;
 			};
 			name = Debug;
 		};
@@ -258,7 +258,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				"LIBRARY_SEARCH_PATHS[arch=*]" = "";
 				MACOSX_DEPLOYMENT_TARGET = 10.7;
-				SDKROOT = macosx10.7;
+				SDKROOT = macosx;
 			};
 			name = Release;
 		};
